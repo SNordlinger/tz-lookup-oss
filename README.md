@@ -50,7 +50,7 @@ alert(tzlookup(42.7235, -73.6931)); // alerts "America/New_York"
 Sources
 -------
 Timezone data is sourced from Evan Siroky's [timezone-boundary-builder][tbb].
-The database was last updated on 6 Jan 2019.
+The database was last updated on Jun 13th, 2021.
 
 To regenerate the library's database yourself, you will need to install GDAL:
 
