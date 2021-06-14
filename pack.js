@@ -309,6 +309,11 @@ function tile(candidates, etc_tzid, min_lat, min_lon, max_lat, max_lon, depth) {
       // will tweak it if anyone complains.
       if(a === "Africa/Juba" && b === "Africa/Khartoum") { return b; }
 
+      // https://en.wikipedia.org/wiki/Abkhazia
+      // Select Asia/Tbilisi, as most UN states recognize Abkhazia as part of
+      // Georgia.
+      if(a === "Asia/Tbilisi" && b === "Europe/Moscow") { return a; }
+
       // These are just conflicts that occur due to the resolution of our data.
       // Resolve them arbitrarily and we'll tweak it if anyone complains.
       if(a === "Europe/Amsterdam" && b === "Europe/Berlin") { return a; }
